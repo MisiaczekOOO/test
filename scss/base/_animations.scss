@@ -1,0 +1,177 @@
+//animations
+
+//drawing homepage title
+@keyframes home-draw-k {
+  from {
+    stroke-dashoffset: 320.8900451660156;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes home-draw-o {
+  from {
+    stroke-dashoffset: 314.75323486328125;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes home-draw-d {
+  from {
+    stroke-dashoffset: 326.4870910644531;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes home-draw-z {
+  from {
+    stroke-dashoffset: 296.2052001953125;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes home-draw-i {
+  from {
+    stroke-dashoffset: 154.55990600585938;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes home-draw-m {
+  from {
+    stroke-dashoffset: 396.4693298339844;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes home-draw-y {
+  from {
+    stroke-dashoffset: 241.40936279296875;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+//drawing services title
+@keyframes services-draw-u1 {
+  from {
+    stroke-dashoffset: 426.6566467285156;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+    fill: blue;
+  }
+}
+
+@keyframes services-draw-s {
+  from {
+    stroke-dashoffset: 440.0375671386719;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes services-draw-l {
+  from {
+    stroke-dashoffset: 348.3584899902344;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes services-draw-u2 {
+  from {
+    stroke-dashoffset: 291.8189392089844;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes services-draw-g {
+  from {
+    stroke-dashoffset: 317.5695495605469;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes services-draw-i {
+  from {
+    stroke-dashoffset: 426.6566467285156;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+//appear animations
+@keyframes appear-left {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear-up {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear-center {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes after-appear {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}

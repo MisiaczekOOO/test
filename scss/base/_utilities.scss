@@ -1,0 +1,49 @@
+//variables like from frameworks
+
+.u-title {
+  &--main {
+    color: $color-text-white;
+    font-size: 6.4rem;
+    line-height: 100%;
+  }
+
+  &--services-subtitle {
+    color: $color-services;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  &--portfolio-subtitle {
+    color: $color-portfolio;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  &--contact-subtitle {
+    color: $color-contact;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  animation: 2s appear-left forwards;
+  animation-fill-mode: backwards;
+}
+
+.u-icon {
+  color: $color-text-white;
+  font-size: 3.2rem;
+
+  &--grey {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--mail,
+  &--phone,
+  &--pin {
+    font-size: 2.4rem;
+    color: $color-contact;
+  }
+}

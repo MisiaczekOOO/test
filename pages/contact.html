@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kodzimy</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/js/nav-phone.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2 class="navbar__name">Podstawowa nawigacja strony</h2>
+      <a href="/index.html">
+        <h2 class="navbar__logo">
+          <span class="navbar__logo--special">K</span
+          ><span class="navbar__logo--main">odzimy</span>
+        </h2>
+      </a>
+
+      <div class="navbar__list" id="navbar">
+        <a
+          href="/index.html"
+          class="navbar__list--item navbar__list--item--about-us"
+        >
+          O nas
+        </a>
+        <a
+          href="/pages/services.html"
+          class="navbar__list--item navbar__list--item--services"
+        >
+          Usługi
+        </a>
+        <a
+          href="/pages/portfolio.html"
+          class="navbar__list--item navbar__list--item--portfolio"
+        >
+          Portfolio
+        </a>
+        <a
+          href="/pages/contact.html"
+          class="navbar__list--item navbar__list--item--contact"
+        >
+          Kontakt
+        </a>
+      </div>
+      <img
+        id="hamburger_button"
+        src="/assets/images/ham-icon.svg"
+        alt=""
+        class="navbar__hamburger"
+      />
+    </nav>
+    <main class="contact-main">
+      <section class="title-section">
+        <div class="form-section__title">
+          <h2 class="u-title u-title--main">Kontakt</h2>
+          <h3 class="u-title u-title--contact-subtitle">
+            Lorem ipsum dolor sit amet
+          </h3>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <section class="form-section">
+          <form action="" class="contact-form">
+            <input
+              type="text"
+              class="contact-form--input"
+              placeholder="Imię i Nazwisko"
+              name=""
+              id=""
+            />
+            <input
+              type="text"
+              class="contact-form--input"
+              placeholder="example@kodzimy.pl"
+              name=""
+              id=""
+            />
+            <textarea
+              placeholder="opis"
+              class="contact-form--area"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="Wyślij" class="contact-form--submit" />
+          </form>
+        </section>
+
+        <section class="map-section">
+          <iframe
+            class="map-section--map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.1782404696337!2d19.939414776864073!3d50.06422351509734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b10479872af%3A0x5238501a840aa931!2sSzpitalna%2038%2C%2031-020%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1697995989383!5m2!1spl!2spl"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map-section__pin-box">
+            <i class="u-icon u-icon--pin fa-solid fa-location-dot"></i>
+            <p class="map-section__pin-box--street">Szpitalna 38</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="direct-section">
+        <h2 class="direct-section--heading">Kontakt bezpośredni</h2>
+
+        <div class="direct-section__info">
+          <i class="u-icon u-icon--phone fa-solid fa-phone"></i>
+          <p class="direct-section__info--content">+48 930 390 390</p>
+        </div>
+        <div class="direct-section__info">
+          <i class="u-icon u-icon--mail fa-solid fa-envelope"></i>
+          <p class="direct-section__info--content">kodzimy@kodzimy.com</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__name-socials">
+        <h2 class="footer__name-socials--title">Kodzimy©2023</h2>
+
+        <div class="footer__socials-box">
+          <a href="#" class="footer__socials-box--item">
+            <i class="fa-brands fa-instagram u-icon"></i>
+          </a>
+          <a href="#" class="footer__socials-box--item">
+            <i class="fa-brands fa-facebook u-icon"></i>
+          </a>
+          <a href="#" class="footer__socials-box--item">
+            <i class="fa-brands fa-linkedin u-icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__nav">
+        <a href="/index.html" class="footer__nav--item"> O nas </a>
+        <a href="/pages/services.html" class="footer__nav--item"> Usługi </a>
+        <a href="/pages/portfolio.html" class="footer__nav--item">
+          Portfolio
+        </a>
+        <a href="/pages/contact.html" class="footer__nav--item"> Kontakt </a>
+      </div>
+
+      <div class="footer__contact">
+        <h2 class="footer__contact--title">Masz jakieś pytania?</h2>
+
+        <ul class="footer__contact-box">
+          <li class="footer__contact-box--item">+48 999 999 999</li>
+          <li class="footer__contact-box--item">kodzimy@kodzimy.com</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

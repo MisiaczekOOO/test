@@ -1,0 +1,244 @@
+// .services-main {
+//   margin-block: 15vh;
+// }
+
+.services-section {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.8rem;
+  justify-content: center;
+  position: relative;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__panel-box {
+    max-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(0, #{"min(100%, max(40rem, 100%/3))"})
+    );
+    justify-content: center;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 4.8rem;
+
+    animation: 1s appear-center forwards 1s;
+    animation-fill-mode: backwards;
+
+    &--arrow {
+      position: absolute;
+      top: 85%;
+      left: 49.45%;
+      animation: 1s appear-center forwards 1s;
+      animation-fill-mode: backwards;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__panel {
+    padding: 1.6rem;
+    flex-direction: column;
+    gap: 1rem;
+    transition: all 0.5s;
+    border: 2px solid transparent;
+    text-decoration: none;
+    animation: appear 3s forwards;
+    &:nth-child(odd) {
+      background-color: $background_darker;
+    }
+
+    &:nth-child(even) {
+      background-color: $background-ligher;
+    }
+    &:hover {
+      border: 2px solid $color-text-grey;
+    }
+
+    &--heading {
+      color: $color-services;
+      font-size: 3.2rem;
+    }
+
+    &--description {
+      color: $color-text-grey;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.courses-section {
+  // &__title {
+  //   &--second {
+  //     animation: 2s appear-left forwards;
+  //     animation-fill-mode: backwards;
+  //   }
+  // }
+  &__courses-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    margin-block: 5rem;
+  }
+}
+
+.course {
+  background-color: $background-darker;
+  box-shadow: -12px -12px 0px 0px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem;
+  transition: box-shadow 0.9s;
+  height: 100%;
+  max-width: 40rem;
+  opacity: 0;
+
+  &__heading,
+  &__lenght,
+  &__date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2.4rem;
+
+    &--level {
+      color: $color-services;
+      font-style: italic;
+      font-size: 1.6rem;
+      line-height: 130%;
+      width: 100%;
+      font-weight: 800;
+    }
+  }
+
+  &__heading--name,
+  &__lenght--number,
+  &__date--number,
+  &__topics--number {
+    font-size: 2rem;
+    line-height: 100%;
+    color: $color-services;
+    width: 100%;
+    align-self: flex-start;
+    font-weight: 900;
+  }
+
+  &__heading--name {
+    color: $color-text-white;
+    font-size: 2.4rem;
+  }
+
+  &__date--number {
+    align-self: center;
+  }
+
+  &__topics--number {
+    margin-bottom: 1.6rem;
+  }
+
+  &__lenght--desc,
+  &__date--desc {
+    font-size: 1.6rem;
+    color: $color-text-white;
+    width: 100%;
+    align-self: flex-start;
+  }
+
+  &__list {
+    padding-left: 1.6rem;
+    font-size: 1.6rem;
+    color: $color-text-white;
+    font-weight: 700;
+    width: 100%;
+
+    &--item {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    &--old {
+      font-size: 1.6rem;
+      color: $color-text-grey;
+      text-decoration: line-through;
+    }
+
+    &--new {
+      font-size: 2.4rem;
+      color: $color-text-white;
+    }
+  }
+
+  &__instalments {
+    text-align: center;
+    margin-top: -3rem;
+    color: $color-text-grey;
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    box-shadow: -12px -12px 0px 0px $color-services;
+  }
+}
+
+.course-appear > .course {
+  &:nth-child(1) {
+    animation: 1s appear-up forwards 0.5s;
+  }
+
+  &:nth-child(2) {
+    animation: 1s appear-up forwards 1s;
+  }
+
+  &:nth-child(3) {
+    animation: 1s appear-up forwards 1.5s;
+  }
+
+  &:nth-child(4) {
+    animation: 1s appear-up forwards 2s;
+  }
+}
+
+#s1 {
+  stroke-dasharray: 426.6566467285156;
+  animation: 2s services-draw-i forwards;
+}
+
+#s2 {
+  stroke-dasharray: 317.5695495605469;
+  animation: 2s services-draw-s forwards;
+}
+
+#s3 {
+  stroke-dasharray: 291.8189392089844;
+  animation: 2s services-draw-l forwards;
+}
+
+#s4 {
+  stroke-dasharray: 348.3584899902344;
+  animation: 2s services-draw-u2 forwards;
+}
+
+#s5 {
+  stroke-dasharray: 440.0375671386719;
+  animation: 2s services-draw-g forwards;
+}
+
+#s6 {
+  stroke-dasharray: 286.6245422363281;
+  animation: 2s services-draw-i forwards;
+}

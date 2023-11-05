@@ -1,0 +1,51 @@
+//global resets etc.
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $background-color;
+  position: relative;
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+.body-lock {
+  overflow: hidden;
+}
+
+main {
+  padding: 0 $main-website-padding;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: $scrollbar-empty-area-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $scrollbar-handle-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $scrollbar-handle__hover-color;
+}

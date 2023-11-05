@@ -1,0 +1,211 @@
+//sections
+
+.home-main {
+  margin-bottom: 8.2rem;
+}
+
+.coop-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__heading {
+    color: $color-text-white;
+    font-size: 6.4rem;
+    text-align: center;
+    line-height: 110%;
+    margin-bottom: 4.8rem;
+    // animation: 1s appear-up 1.2s;
+    // animation-fill-mode: backwards;
+  }
+
+  &__card-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    width: 80%;
+  }
+
+  &__card {
+    max-width: 50rem;
+    opacity: 0;
+    align-self: center;
+
+    &--heading {
+      color: $color-about;
+      font-size: 3.6rem;
+      line-height: 110%;
+      margin-bottom: 1.6rem;
+    }
+
+    &--description {
+      color: $color-text-grey;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+// .show {
+//   &--coop {
+//     animation: 1s appear-up forwards;
+//   }
+
+//   &--references {
+//     * {
+//       animation: 1s appear-left forwards;
+//     }
+//   }
+// }
+
+.references-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-block: 4.8rem;
+
+  &__heading {
+    color: $color-text-white;
+    font-size: 4.8rem;
+    text-align: center;
+    font-weight: 800;
+    margin-block: 3.2rem;
+    line-height: 130%;
+  }
+
+  &__card-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.2rem;
+  }
+
+  &__card {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    padding: 2.4rem;
+    position: relative;
+    color: $color-text-grey;
+    background-color: $background-darker;
+    max-width: 400px;
+    min-height: 15.625rem;
+    z-index: -1;
+    font-size: 1.6rem;
+    opacity: 0;
+
+    &--name {
+      font-size: 1.9rem;
+      color: $color-text-white;
+      font-weight: 600;
+      line-height: 100%;
+      padding-block: 1.6rem 0.2rem;
+    }
+  }
+}
+
+.more-section {
+  &__heading {
+    color: $color-about;
+    font-weight: 900;
+    font-size: 4.8rem;
+    text-align: center;
+    line-height: 120%;
+    margin-bottom: 6.4rem;
+  }
+
+  &__sticky-box {
+    position: relative;
+    &--sticky-text {
+      position: sticky;
+      top: 10vh;
+      color: $color-text-white;
+      font-size: 4.8rem;
+      font-weight: 800;
+      line-height: 130%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 6.4rem;
+    justify-content: space-around;
+  }
+
+  &__card {
+    max-width: 100%;
+  }
+
+  &__card-box {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6.4rem;
+  }
+
+  &__card-text {
+    &--heading {
+      font-size: 3.6rem;
+      color: $color-text-white;
+      font-weight: 800;
+      line-height: 120%;
+    }
+
+    &--subtitle {
+      font-size: 1.6rem;
+      color: $color-about;
+      margin-bottom: 1.6rem;
+    }
+
+    &--description {
+      font-size: 2.4rem;
+      color: $color-text-grey;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .coop-section {
+    &__card-box {
+      width: 100%;
+    }
+
+    &__card {
+      max-width: 75%;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        align-self: center;
+      }
+    }
+  }
+
+  .more-section {
+    &__sticky-box {
+      padding-inline: 4.8rem;
+      &--sticky-text {
+        writing-mode: vertical-rl;
+      }
+    }
+
+    &__content {
+      gap: $main-website-padding;
+    }
+    &__card-box {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 220px) {
+  .more-section {
+    &__sticky-box {
+      display: none;
+    }
+  }
+}

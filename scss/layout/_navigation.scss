@@ -1,0 +1,139 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: $main-website-padding/5 $main-website-padding;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(3px);
+  z-index: 100;
+  &__name {
+    display: none;
+  }
+
+  &__logo {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $color-text-white;
+    font-size: 32px;
+
+    &--special {
+      color: $color-about;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 2.4rem;
+    transition: all 1s;
+
+    &--item {
+      color: $color-text-white;
+      font-size: 1.8rem;
+      font-weight: 600;
+      position: relative;
+      &::after {
+        transition: all 0.7s;
+        content: "";
+        bottom: -0.8rem;
+        left: 0;
+        height: 0.3rem;
+        width: 0;
+        position: absolute;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &--about-us {
+        color: $color-about;
+        &:hover {
+          &::after {
+            background-color: $color-about;
+          }
+        }
+      }
+
+      &--services {
+        color: $color-services;
+        &:hover {
+          &::after {
+            background-color: $color-services;
+          }
+        }
+      }
+
+      &--portfolio {
+        color: $color-portfolio;
+        &:hover {
+          &::after {
+            background-color: $color-portfolio;
+          }
+        }
+      }
+
+      &--contact {
+        color: $color-contact;
+        &:hover {
+          &::after {
+            background-color: $color-contact;
+          }
+        }
+      }
+    }
+  }
+  &__hamburger {
+    display: none;
+    z-index: 2;
+    max-width: 32px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar {
+    &__list {
+      display: none;
+      &--item {
+        &::after {
+          height: 0.7rem;
+        }
+      }
+    }
+
+    &__hamburger {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 220px) {
+  .navbar {
+    &__logo {
+      &--main {
+        display: none;
+      }
+    }
+  }
+}
+
+.navbar-phone {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  background-color: $background-darker;
+  &--item {
+    font-size: 6.4rem;
+  }
+}

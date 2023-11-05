@@ -1,0 +1,65 @@
+.footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: $main-website-padding/2 $main-website-padding;
+    &__name-socials{
+        &--title{
+            color: $color-text-white;
+            font-size: 2.4rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    &__socials-box{
+        display: flex;
+        gap: 1.6rem;
+        &--item{
+            display: inline-block;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        font-size: 1.6rem;
+
+        &--item{
+
+            color: $color-text-grey;
+            
+        }
+    }
+
+    &__contact{
+        &--title{
+            font-size: 2.4rem;
+            color: $color-text-white;
+        }
+    }
+
+    &__contact-box{
+        list-style: none;
+
+        &--item{
+            font-size: 1.6rem;
+            color: $color-text-grey;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .footer{
+        flex-direction: column;
+        gap: 3.2rem;
+        align-items: center;
+
+        &__socials-box{
+            justify-content: center;
+        }
+        &__nav{
+            flex-direction: row;
+        }
+    }
+}
